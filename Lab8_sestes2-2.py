@@ -31,4 +31,10 @@ while user_choice:
         circle_circumference = circle.calc_circumference(circle_radius)
         print(f"\nThe circumference of the circle is {circle_circumference}")
 
+    if user_choice == 3:
+        rectangle_width = int(input("\nEnter the width of the rectangle: "))
+        rectangle_height = int(input("Enter the height of the rectangle: "))
+        rectangle_area = rectangle.calc_area(width=rectangle_width, height=rectangle_height)
+        print(f"\nThe area of the rectangle is {rectangle_area}")
+
     
