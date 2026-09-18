@@ -5,7 +5,7 @@
     9/17/2026"""
 
 # aliases are important here because the function 
-#   calc_areas is in both modules, so we will need 
+#   'calc_area' is in both modules, so we will need 
 #   to distinguish which module we want to pull from
 #   when we call the function
 import rectangle as r
