@@ -22,7 +22,6 @@ while user_choice:
     print("4. Calculate Rectangle Perimeter")
     print("5. Exit")
 
-# get input value for user_choice
     user_choice = input("\nEnter your choice (1-5): ")
     user_choice = int(user_choice)
 
@@ -30,7 +29,7 @@ while user_choice:
     if not (1 <= user_choice <= 5):
         print("\nPlease enter an integer between 1-5.")
 
-# calculate problem based on user input
+# call function based on user input
     if user_choice == 1:
         circle_radius = int(input("\nEnter the radius of the circle: "))
         circle_area = c.calc_area(circle_radius)
