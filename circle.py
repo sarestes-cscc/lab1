@@ -1,4 +1,4 @@
-""" Geometry Calculator
+"""Geometry Calculator
     Sarah Estes
     Circle Area and Circumference functions
     Using the built-in Python Math module
@@ -8,7 +8,7 @@ import math
 
 def calc_area(radius):
     """Calculates and returns the area of a circle"""
-    circle_area = math.pi(radius ** 2)
+    circle_area = math.pi * (radius ** 2)
     return circle_area
 
 def calc_circumference(radius):

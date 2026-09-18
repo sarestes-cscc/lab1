@@ -11,7 +11,7 @@
 import rectangle as r
 import circle as c
 
-user_choice = ""
+user_choice = True
 
 while user_choice:
     print("Geometry Calculator")
@@ -49,4 +49,6 @@ while user_choice:
 
     if user_choice == 5:
         user_choice == False
+
+print("\nYou have exited.")
 
