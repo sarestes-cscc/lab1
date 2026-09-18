@@ -14,7 +14,7 @@ import circle as c
 user_choice = True
 
 while user_choice:
-    print("Geometry Calculator")
+    print("\nGeometry Calculator")
     print("-------------------")
     print("1. Calculate Circle Area")
     print("2. Calculate Circle Circumference")
@@ -26,16 +26,20 @@ while user_choice:
     user_choice = input("\nEnter your choice (1-5): ")
     user_choice = int(user_choice)
 
+# check to make sure value is within range
+    if not (1 <= user_choice <= 5):
+        print("\nPlease enter an integer between 1-5.")
+
 # calculate problem based on user input
     if user_choice == 1:
         circle_radius = int(input("\nEnter the radius of the circle: "))
         circle_area = c.calc_area(circle_radius)
-        print(f"\nThe area of the circle is {circle_area}")
+        print(f"\nThe area of the circle is {circle_area:.2f}")
 
     if user_choice == 2:
         circle_radius = int(input("\nEnter the radius of the circle: "))
         circle_circumference = c.calc_circumference(circle_radius)
-        print(f"\nThe circumference of the circle is {circle_circumference}")
+        print(f"\nThe circumference of the circle is {circle_circumference:.2}")
 
     if user_choice == 3:
         rectangle_width = int(input("\nEnter the width of the rectangle: "))
