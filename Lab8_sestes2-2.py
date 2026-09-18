@@ -4,8 +4,12 @@
     and rectangle area & perimeter
     9/17/2026"""
 
-import rectangle
-import circle
+# aliases are important here because the function 
+#   calc_areas is in both modules, so we will need 
+#   to distinguish which module we want to pull from
+#   when we call the function
+import rectangle as r
+import circle as c
 
 user_choice = ""
 
@@ -23,18 +27,22 @@ while user_choice:
 
     if user_choice == 1:
         circle_radius = int(input("\nEnter the radius of the circle: "))
-        circle_area = circle.calc_area(circle_radius)
+        circle_area = c.calc_area(circle_radius)
         print(f"\nThe area of the circle is {circle_area}")
 
     if user_choice == 2:
         circle_radius = int(input("\nEnter the radius of the circle: "))
-        circle_circumference = circle.calc_circumference(circle_radius)
+        circle_circumference = c.calc_circumference(circle_radius)
         print(f"\nThe circumference of the circle is {circle_circumference}")
 
     if user_choice == 3:
         rectangle_width = int(input("\nEnter the width of the rectangle: "))
         rectangle_height = int(input("Enter the height of the rectangle: "))
-        rectangle_area = rectangle.calc_area(width=rectangle_width, height=rectangle_height)
+        rectangle_area = r.calc_area(width=rectangle_width, height=rectangle_height)
         print(f"\nThe area of the rectangle is {rectangle_area}")
 
-    
+    if user_choice == 4:
+        rectangle_width = int(input("\nEnter the width of the rectangle: "))
+        rectangle_height = int(input("Enter the height of the rectangle: "))
+        rectangle_parameter = r.calc_perimeter(rectangle_width, rectangle_height)
+        print(f"\nThe parameter of the rectangle is {rectangle_parameter}")
