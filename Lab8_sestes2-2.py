@@ -22,9 +22,11 @@ while user_choice:
     print("4. Calculate Rectangle Perimeter")
     print("5. Exit")
 
+# get input value for user_choice
     user_choice = input("\nEnter your choice (1-5): ")
     user_choice = int(user_choice)
 
+# calculate problem based on user input
     if user_choice == 1:
         circle_radius = int(input("\nEnter the radius of the circle: "))
         circle_area = c.calc_area(circle_radius)
@@ -48,7 +50,7 @@ while user_choice:
         print(f"\nThe parameter of the rectangle is {rectangle_parameter}")
 
     if user_choice == 5:
-        user_choice == False
+        user_choice = False
 
-print("\nYou have exited.")
+print("\nGoodbye!")
 
