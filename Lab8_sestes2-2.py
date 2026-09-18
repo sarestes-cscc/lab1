@@ -4,6 +4,9 @@
     and rectangle area & perimeter
     9/17/2026"""
 
+import rectangle
+import circle
+
 user_choice = ""
 
 while user_choice:
@@ -15,3 +18,4 @@ while user_choice:
     print("4. Calculate Rectangle Perimeter")
     print("5. Exit")
     user_choice = input("Enter your choice (1-5): ")
+    
