@@ -46,3 +46,7 @@ while user_choice:
         rectangle_height = int(input("Enter the height of the rectangle: "))
         rectangle_parameter = r.calc_perimeter(rectangle_width, rectangle_height)
         print(f"\nThe parameter of the rectangle is {rectangle_parameter}")
+
+    if user_choice == 5:
+        user_choice == False
+
