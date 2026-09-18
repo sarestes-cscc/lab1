@@ -17,5 +17,13 @@ while user_choice:
     print("3. Calculate Rectangle Area")
     print("4. Calculate Rectangle Perimeter")
     print("5. Exit")
-    user_choice = input("Enter your choice (1-5): ")
+    
+    user_choice = input("\nEnter your choice (1-5): ")
+    user_choice = int(user_choice)
+
+    if user_choice == 1:
+        circle_radius = int(input("\nEnter the radius of the circle: "))
+        circle_area = circle.calc_area(circle_radius)
+        print(f"\nThe area of the circle is {circle_area}")
+
     
